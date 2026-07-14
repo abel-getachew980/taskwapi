@@ -1,18 +1,18 @@
 {
-  "name": "backend",
+  "name": "task-api",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Task API backed by PostgreSQL, built with Express and Prisma",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon src/server.js"
+    "start": "node src/index.js",
+    "prisma:push": "prisma db push",
+    "prisma:studio": "prisma studio"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "module",
   "dependencies": {
-    "express": "^5.2.1",
-    "nodemon": "^3.1.14"
+    "@prisma/client": "^5.19.1",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "prisma": "^5.19.1"
   }
 }
